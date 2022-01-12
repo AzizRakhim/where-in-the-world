@@ -4,13 +4,358 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Where in the world</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/col.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="site-header">
+        <div class="container">
+            <div class="row middle between">
+                <h1 class="header-title">
+                    Where in the world?
+                </h1>
+                <button id="modeBtn" class="mode row middle">
+                    Dark Mode
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- header end -->
+    <!-- main start -->
+
+    <main>
+        <section id="search">
+            <div class="container">
+                <div class="row middle between">
+                    <div class="input-search row middle">
+                        <i class='bx bx-search-alt-2'></i>
+                        <input type="text" name="search" placeholder="Search for a country…" >
+                    </div>
+                    <div class="select-option">
+                        <select class="select-item" name="country" id="country">
+                            <option class="option-item" value="africa">
+                                Africa
+                            </option>
+                            <option class="option-item" value="america">
+                                America
+                            </option>
+                            <option class="option-item" value="asia">
+                                Asia
+                            </option>
+                            <option class="option-item" value="europe">
+                                Europe
+                            </option>
+                            <option class="option-item" value="oceania">
+                                Oceania
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- search end -->
+        <!-- country start -->
+        <section id="country">
+            <div class="container">
+                <ul class="country-list row">
+                    <li class="country-item">
+                        <div class="item-img">
+                            <img class="item-real-img" src="images/flag-of-germany.svg" alt="flag-of-germany" width="267" height="160">
+                        </div>
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Germany
+                            </h2>
+                            <ul class="item-list">
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Population: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        81,770,900
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Region:
+                                    </span>
+                                    <span class="item-span-light">
+                                        Europe
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Capital: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        Berlin
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="country-item">
+                        <div class="item-img">
+                            <img class="item-real-img" src="images/flag-of-america.png" alt="flag-of-america" width="267" height="160">
+                        </div>
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                United States of America
+                            </h2>
+                            <ul class="item-list">
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Population: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        323,947,000
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Region:
+                                    </span>
+                                    <span class="item-span-light">
+                                        Americas
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Capital: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        Washington, D.C.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="country-item">
+                        <div class="item-img">
+                            <img class="item-real-img" src="images/flag-of-brazil.png" alt="flag-of-brazil" width="267" height="160">
+                        </div>
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Brazil
+                            </h2>
+                            <ul class="item-list">
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Population: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        206,135,893
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Region:
+                                    </span>
+                                    <span class="item-span-light">
+                                        Americas
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Capital: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        Brasília
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="country-item">
+                        <div class="item-img">
+                            <img class="item-real-img" src="images/flag-of-france.svg" alt="flag-of-france" width="267" height="160">
+                        </div>
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Iceland
+                            </h2>
+                            <ul class="item-list">
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Population: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        334,300
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Region:
+                                    </span>
+                                    <span class="item-span-light">
+                                        Europe
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Capital: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        Reykjavík
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="country-item">
+                        <div class="item-img">
+                            <img class="item-real-img" src="images/flag-of-afghanistan.png" alt="flag-of-afghanistan" width="267" height="160">
+                        </div>
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Afghanistan
+                            </h2>
+                            <ul class="item-list">
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Population: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        27,657,145
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Region:
+                                    </span>
+                                    <span class="item-span-light">
+                                        Asia
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Capital: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        Kabul
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="country-item">
+                        <div class="item-img">
+                            <img class="item-real-img" src="images/flag-of-aland-islands.svg" alt="flag-of-aland-islands" width="267" height="160">
+                        </div>
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Åland Islands
+                            </h2>
+                            <ul class="item-list">
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Population: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        28,875
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Region:
+                                    </span>
+                                    <span class="item-span-light">
+                                        Europe
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Capital: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        Mariehamn
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="country-item">
+                        <div class="item-img">
+                            <img class="item-real-img" src="images/flag-of-albania.png" alt="flag-of-germany" width="267" height="160">
+                        </div>
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Albania
+                            </h2>
+                            <ul class="item-list">
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Population: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        2,886,026
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Region:
+                                    </span>
+                                    <span class="item-span-light">
+                                        Europe
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Capital: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        Tirana
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="country-item">
+                        <div class="item-img">
+                            <img class="item-real-img" src="images/flag-of-algeria.png" alt="flag-of-germany" width="267" height="160">
+                        </div>
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Algeria
+                            </h2>
+                            <ul class="item-list">
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Population: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        40,400,000
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Region:
+                                    </span>
+                                    <span class="item-span-light">
+                                        Africa
+                                    </span>
+                                </li>
+                                <li class="item-item">
+                                    <span class="item-span-bold">
+                                        Capital: 
+                                    </span>
+                                    <span class="item-span-light">
+                                        Algiers
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

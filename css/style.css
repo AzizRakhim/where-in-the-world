@@ -1,4 +1,225 @@
-body{
-    background-color: #fff;
-    min-height: 100vh;
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-Regular.woff2') format('woff2'),
+        url('/fonts/NunitoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-ExtraBold.woff2') format('woff2'),
+        url('/fonts/NunitoSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/NunitoSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('/fonts/NunitoSans-Light.woff2') format('woff2'),
+        url('/fonts/NunitoSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --main-color: #fafafa;
+    --header-color: #fff;
+    --text-color: #111517;
+    --placeholder-color: #848484;
+    --moon: url('/images/moon-regular.png');
+
+}
+
+.dark{
+    --main-color: #202c36;
+    --header-color: #2b3844;
+    --text-color: #fff;
+    --placeholder-color: #fff;
+    --moon: url('/images/sun-regular.png');
+}
+
+body{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    font-family: 'Nunito Sans', 'Arial', sans-serif;
+    transition: all 0.4s ease;
+}
+
+.site-header{
+    padding: 24px 0;
+    background: var(--header-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+
+.container{
+    width: 1260px;
+    padding: 0 10px;
+}
+
+.header-title{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.mode{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-color);
+    border: none;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+
+.mode::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: var(--moon);
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    right: 8px;
+    margin-left: 8px;
+}
+
+/* header end */
+/* main start */
+
+#search{
+    padding: 48px 0;
+}
+
+.input-search{
+    background-color: var(--header-color);
+    padding: 18px 32px;
+    width: 480px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border-radius: 5px;
+}
+
+.bx-search-alt-2{
+    color: var(--text-color);
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+input[type="text"]{
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 20px;
+    width: 85%;
+    border: none;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: var(--placeholder-color);
+}
+
+.select-option{
+    width: 200px;
+    height: 56px;
+    padding: 18px 24px;
+    background-color: var(--header-color);
+}
+
+.select-item{
+    background-color: var(--header-color);
+    width: 150px;
+    border: none;
+    color: var(--text-color);
+}
+
+.select-item:focus{
+    outline: none;
+}
+
+/* search end */
+/* country start */
+
+.country-list{
+    list-style: none;
+}
+
+.country-item{
+    width: 264; 
+    height: 336;
+    background: var(--header-color);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+    border-radius: 5px;
+}
+
+.country-item{
+    margin-right: 57px;
+    margin-bottom: 75px;
+}
+
+.country-item:nth-child(4){
+    margin-right: 0;
+}
+
+.country-item:nth-child(8){
+    margin-right: 0;
+}
+
+.item-real-img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.item-content{
+    padding: 24px 0px 46px 24px;
+}
+
+.item-title{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.item-list{
+    list-style: none;
+}
+
+.item-item:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.item-span-bold{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color);
+}
+
+.item-span-light{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color);
+}
+
